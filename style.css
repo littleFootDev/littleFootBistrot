@@ -1,0 +1,183 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* navigation */
+
+header {
+    height: 20rem;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: url(./images/etage1.jpg) center center no-repeat;
+    background-size: cover;
+}
+.title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 1.5rem;
+    font-family: 'Lora', serif;
+
+}
+.nav{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.block-menu {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.block-menu span {
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+    cursor: pointer;
+    margin-right: .5rem;
+}
+.block-menu span a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+.block-menu span::after {
+    content: "";
+    display: block;
+    width: 0;
+    margin: 0.5em auto 0 auto;
+    height: 0.2em;
+    border-radius: 0.2em;
+    background: #333;
+    transition: all 0.2s ease-out;
+}
+.block-menu span:hover::after {
+    width: 100%;
+}
+.btn-rond-menu {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background: #333;
+    position: fixed;
+    top: 20em;
+    left: 25em;
+    z-index: 10;
+}
+.cont-ligne {
+    width: 3.6em;
+    height: 3.6em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ligne-unique {
+    width: 100%;
+    height: 0.4em;
+    border-radius: 0.5em;
+    background: #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ligne-unique::before {
+    content: "";
+    position: absolute;
+    bottom: 1em;
+    background: #f1f1f1;
+    width: 100%;
+    height: 0.4em;
+    border-radius: 0.5em;
+}
+.ligne-unique::after {
+    content: "";
+    position: absolute;
+    top: 1em;
+    background: #f1f1f1;
+    width: 100%;
+    height: 0.4em;
+    border-radius: 0.5em;
+}
+.cont-ligne.active .ligne-unique::after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms ease, transform 300ms 300ms ease;
+}
+.cont-ligne.active .ligne-unique::before {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: top 300ms ease, transform 300ms 300ms ease;
+}
+.cont-ligne.active .ligne-unique {
+    background: transparent;
+}
+.menu-visible {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================================= intro ================================ */
+.introduction {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem auto;
+    width: 75%;
+}
+.intro-title {
+    font-size: 1.8rem;
+    font-family: 'Lora' sans-serif;
+    margin-bottom: .5rem;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.text1 {
+    margin-bottom: 1rem;
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+    .btn-rond-menu {
+        display: none;
+    }
+    header {
+        height: 40rem;
+    }
+    .title {
+        font-size: 3.5rem;
+    }
+    .nav {
+        display : flex;
+    }
+    .block-menu span {
+        margin-right : 3rem;
+    }
+    .nav-menu a{
+        font-size: 2.5rem;
+        
+    }
+
+}
