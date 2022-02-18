@@ -203,7 +203,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top:5rem;
+    margin:5rem 0 1rem 0;
+
 }
 .picture-footer {
     display: flex;
@@ -366,6 +367,85 @@ td {
     font-family: 'Raleway', sans-serif;
     margin-bottom: .5rem;
 }
+/* section galerie */
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: 5rem auto 0;
+}
+.card {
+    width: 75%;
+    height : 15rem;
+    border : 1px solid #333;
+    border-radius: .2rem;
+    margin-bottom: 2rem;
+}
+.containt-img {
+    width: 100%;
+}
+.containt-img img {
+    width : 100%;
+    height :12rem;
+}
+.card h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: .8rem;
+}
+/* section contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    border-radius: .2rem;
+    width: 75%;
+    margin :5rem auto;
+    padding: 3rem;
+    background : #f1f1f1;
+    font-family: 'Raleway', sans-serif;
+}
+.containt-contact {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+.containt-contact h2 {
+    font-size: 1.1rem;
+    margin-bottom:1.2rem;
+    font-family: 'Lora', sans-serif;
+}
+.containt-contact p {
+    font-size: .9rem;
+    font-family: 'Raleway';
+}
+.containt-form {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+.containt-form p {
+    font-size: .8rem;
+    margin-bottom: .9rem;
+}
+.containt-form input {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 85%;
+}
+.containt-form textarea {
+    text-align: center;
+}
 
 /* Desktop */
 @media screen and (min-width: 768px) {
@@ -422,8 +502,16 @@ td {
     .carte-article {
         align-items: center;
     }
+    .card  {
+        width: 40%;
+        margin-right: 2rem;
+    }
 }
-
+@media screen and (min-width: 950px) {
+    .card {
+        width : 30%;
+    }
+}
 @media screen and (min-width: 1350px) {
     .picture-liens {
         height:20rem;
@@ -431,5 +519,11 @@ td {
     }
     .block-menu span {
         margin-right : 4rem;
+    }
+    .contact {
+        width: 50%;
+    }
+    .card {
+        width : 20%;
     }
 }
