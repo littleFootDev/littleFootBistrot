@@ -44,16 +44,15 @@ header {
 
 }
 .block-menu span {
-    font-size: 1rem;
     text-align: center;
     position: relative;
-    font-weight: 700;
     cursor: pointer;
 }
 .block-menu span a {
     text-decoration: none;
     color: #fff;
     font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
 }
 .block-menu span::after {
     content: "";
@@ -143,20 +142,19 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center_;
     margin: 3rem auto;
     width: 75%;
-    border: 1px solid #333;
-    border-radius: .2rem;
     padding: 1rem;
 }
 .intro-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-family: 'Lora' sans-serif;
-    margin-bottom: .5rem;
+    margin-bottom: 2.5rem;
 }
 
 .intro-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: justify;
 }
 .text1 {
@@ -173,12 +171,11 @@ header {
 .picture-liens {
     width: 15rem;
     height: 15rem;
-    border: 1px solid #333;
+    border: 20px solid rgba(255,255, 255, .5);
     margin-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: .2rem;
 }
 .items-liens1{
     background: url(./images/croqui.jpg) center center ;
@@ -200,42 +197,50 @@ a{
 }
 footer {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:5rem 0 1rem 0;
+    margin:5rem 0 0 0;
+    background: #ddd;
 
 }
 .picture-footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    margin: 5rem ;
 
+}
+.picture-footer p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
 .footer-img {
     height:5rem;
     width: 5rem;
-    margin-right: 1rem;
+    margin-right: .5rem;
 }
 .reseaux {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin-top: 2rem;
 }
 .reseaux p {
-    font-size: 1.2rem;
+    font-size: .8rem;
     color: #333;
     font-family: 'Raleway', sans-serif;
     margin-bottom: .5rem;
 }
 .icon-reseaux {
-    height:2rem;
+    height:1rem;
 }
 .liens-reseaux {
+    margin : 0 2rem;
     color: #333;
-    font-size:1.3rem;
+    font-size:1rem;
+    display: flex;
+
 
 }
 
@@ -243,18 +248,30 @@ footer {
 .header {
     width: 100%;
     height: 10rem;
-    border : 1px solid #333;
     display: flex;
     justify-content: space-between;
+    align-items: center; 
+    flex-direction: column;
+    
+}
+.groupe-nav{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column
+}
+.nav-link {
+    margin-right: 1rem;
+}
+.title-restaurant a {
+    color : #333;
+    font-size: 1.4rem;
+    font-family: 'Lora' sans-serif;
 }
 .nav-restaurant {
     display:none;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
-    position :absolute;
     top: 7rem;
 }
 .btn-rond-menu2{
@@ -268,9 +285,7 @@ footer {
     z-index: 10;
 }
 .title-restaurant {
-    font-size: 2rem;
     margin-top: 1.5rem;
-    font-family: 'Lora' sans-serif;
 }
 .block-menu span .nav-link {
     color: #333;
@@ -288,7 +303,7 @@ footer {
 .baniere{
     width: 100%;
     height: 10rem;
-    background: url(./images/baniere.jpg) center center no-repeat;
+    background: url(./images/etage1.jpg) center center no-repeat;
     background-size: cover;
     margin-top: 5rem;
 }
@@ -298,7 +313,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3rem auto;
+    margin: 5rem auto;
 }
 .article {
     display: flex;
@@ -309,11 +324,11 @@ footer {
 }
 .article h2 {
     font-size: 1.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 2rem;
     font-family: 'Lora', serif;
 }
 .article p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: justify;
     font-family: 'Raleway', sans-serif;
     line-height: 1.5;
@@ -329,7 +344,54 @@ td {
     width: 6rem;
 }
 
+.contact-link {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content-link-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+.content-link-text p {
+    margin-bottom: .5rem;
+}
+.btn-link {
+    padding: 1rem;
+    cursor: pointer;
+}
+.btn-link a {
+    color: #333;
+}
 /* La carte */
+.presentation-carte {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+.carte-title {
+    font-size:1.5rem;
+    font-family: 'Lora';
+    margin-bottom: 1.5rem;;
+}
+.presentation-carte p {
+    margin-bottom: 1rem;
+    font-size: .8rem;
+    font-family: 'Raleway', sans-serif;
+
+}
 .carte {
     width: 75%;
     display: flex;
@@ -341,11 +403,6 @@ td {
     border-radius: .2rem;
     padding: 3rem;
     background: #f1f1f1
-}
-.carte-title {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    font-family: 'Lora', serif;
 }
 .carte-article {
     width: 75%;
@@ -359,7 +416,7 @@ td {
 .carte-article h3 {
     font-size:1.2rem;
     font-family: 'Lora', serif;
-    margin: 0 auto .5rem auto;   
+    margin: 0 auto 2rem auto;   
 }
 
 .carte-article p{
@@ -370,59 +427,107 @@ td {
 /* section galerie */
 .galerie {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 75%;
-    margin: 5rem auto 0;
+    margin: 3rem auto;
 }
-.card {
-    width: 75%;
-    height : 15rem;
-    border : 1px solid #333;
-    border-radius: .2rem;
-    margin-bottom: 2rem;
+.galerie-title {
+    font-size: 1.3rem;
+    font-family: 'Lora', sans-serif;
+    margin-bottom: 3rem;
 }
-.containt-img {
-    width: 100%;
-}
-.containt-img img {
-    width : 100%;
-    height :12rem;
-}
-.card h2 {
-    text-align: center;
+.galerie p {
+    font-size: .8rem;
     font-family: 'Raleway', sans-serif;
-    margin-top: .8rem;
+    margin-bottom: 1rem;
 }
+.container-carousel {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.slider img {
+    max-width: 100%;
+    display: none;
+}
+img.active {
+    display : block;
+    animation: fade .8s;
+}
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
+.cont-btn {
+    width:100%;
+    height:auto;
+    border: 1px solid #000;
+    box-shadow: 0 10px 10px rgba(0,0, 0, .3);
+    display: flex;
+    justify-content: center;
+
+}
+.btn-nav{
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #000;
+}
+
 /* section contact */
 .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #333;
-    border-radius: .2rem;
     width: 75%;
-    margin :5rem auto;
-    padding: 3rem;
+    margin :3rem auto; 
+}
+.content-contact-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content-contact-title h2 {
+    font-size: 1.3rem;
+    font-family: 'Lora', serif;
+    margin-bottom: 2rem;
+}
+.content-contact-title p {
+    font-size: .8rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom:1rem;
+}
+.content-renseignement {
+    padding: 2rem;
     background : #f1f1f1;
     font-family: 'Raleway', sans-serif;
+    width:100%;
+    border: 1px solid #333;
+    border-radius: .2rem;
 }
 .containt-contact {
     display: flex;
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    padding: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
 }
 .containt-contact h2 {
     font-size: 1.1rem;
-    margin-bottom:1.2rem;
+    margin-bottom:3rem;
     font-family: 'Lora', sans-serif;
 }
 .containt-contact p {
-    font-size: .9rem;
+    font-size: .7rem;
     font-family: 'Raleway';
 }
 .containt-form {
@@ -449,33 +554,37 @@ td {
 
 /* Desktop */
 @media screen and (min-width: 768px) {
+    /* accueil */
     .btn-rond-menu, .btn-rond-menu2 {
         display: none;
     }
     header {
         height: 40rem;
     }
-    .title, .title-restaurant {
+    .title {
         font-size: 3.5rem;
     }
     .nav {
         display : flex;
-        top: 35rem;
+        top: 36rem;
     }
     .block-menu span {
-        margin-right : 2rem;
+        margin-right : 4rem;
     }
-    .nav-menu a{
-        font-size: 2rem;
+    .block-menu span a{
+        font-size: 1.5rem;
         
     }
     .picture-liens {
-        margin: 5rem;
-    }
-    .footer-img {
         height:10rem;
         width: 10rem;
-        margin-right: 3rem;
+        margin: 2rem 2rem 0 0;
+    }
+    
+    .footer-img {
+        height:7rem;
+        width: 7rem;
+        margin-right: 1rem;
     }
     .reseaux {
         width: 100%;
@@ -489,41 +598,65 @@ td {
     .liens-reseaux {
         margin-right: 1rem;
     }
-    .nav-restaurant {
+    /* restaurant */
+    .header {
+        height: 5rem;
         display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .block-menu span .nav-link {
-        color: #333;
+    .title-restaurant {
+        position: relative;
+        top: 1.5rem;
+        
+    }
+    .title-restaurant a {
         font-size: 2rem;
+    }
+    .groupe-nav1 {
+        margin-left: 4rem;
+    }
+    .nav-restaurant {
+        width :100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .groupe-nav.block-menu span .nav-link {
+        color: #333;
+        font-size: 1rem;
+        cursor: pointer;
     }
     .baniere {
         height: 15rem;
     }
+    /* carte */
+    .presentation-carte {
+        margin-top: 4rem;
+    }
+    .carte {
+        width : 50%;
+    }
     .carte-article {
         align-items: center;
-    }
-    .card  {
-        width: 40%;
-        margin-right: 2rem;
-    }
-}
-@media screen and (min-width: 950px) {
-    .card {
-        width : 30%;
-    }
-}
-@media screen and (min-width: 1350px) {
-    .picture-liens {
-        height:20rem;
-        width: 20rem;
-    }
-    .block-menu span {
-        margin-right : 4rem;
     }
     .contact {
         width: 50%;
     }
-    .card {
-        width : 20%;
+}
+
+@media screen and (min-width: 1350px) {
+    .picture-liens {
+        height:10rem;
+        width: 10rem;
+        margin-right: 5rem;
     }
+    .border-image {
+        border: 1.5rem solid black;
+        height: 10rem;
+        width : 10rem;
+    }
+    .block-menu span {
+        margin-right : 4rem;
+    }
+    
 }

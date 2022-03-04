@@ -12,72 +12,81 @@
 </head>
 <body>
     <div class="header">
-        <h1 class="title-restaurant">LittleFootBistro</h1>
+        <h1 class="title-restaurant"><a href="accueil.html" class="nav-link">LittleFootBistrot</a></h1>
         <div class="btn-rond-menu2">
             <div class="cont-ligne">
                 <div class="ligne-unique"></div>
             </div>
         </div>
         <nav class="nav-restaurant">
-            <div class="block-menu">
-                <span class="nav-menu">
-                    <a href="accueil.html" class="nav-link">Accueil</a>
-                </span>
+            <div class="groupe-nav groupe-nav1">
+                <div class="block-menu">
+                    <span class="nav-menu">
+                        <a href="restaurant.html" class="nav-link">Restaurant</a>
+                    </span>
+                </div>
+                <div class="block-menu">
+                    <span class="nav-menu">
+                        <a href="carte.html" class="nav-link">Carte</a>
+                    </span>
+                </div>
             </div>
-            <div class="block-menu">
-                <span class="nav-menu">
-                    <a href="restaurant.html" class="nav-link">Restaurant</a>
-                </span>
-            </div>
-            <div class="block-menu">
-                <span class="nav-menu">
-                    <a href="carte.html" class="nav-link">Carte</a>
-                </span>
-            </div>
-            <div class="block-menu">
-                <span class="nav-menu">
-                    <a href="galerie.html" class="nav-link">Galerie</a>
-                </span>
-            </div>
-            <div class="block-menu">
-                <span class="nav-menu">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </span>
-            </div>
+            <div class="groupe-nav">
+                <div class="block-menu">
+                    <span class="nav-menu">
+                        <a href="galerie.html" class="nav-link">Galerie</a>
+                    </span>
+                </div>
+                <div class="block-menu">
+                    <span class="nav-menu">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </span>
+                </div>
+            </div> 
         </nav>
     </div>
     <section class="contact">
-        <div class="containt-contact">
-            <h2>Nous contacter</h2>
-            <p>Vous pouvez nous contacter par : </p>
-            <p>Téléphone au : 05.30.18.23.52</p>
-            <p>Mail : thelittlefootbistro@gmail.com</p>
+        <div class="content-contact-title">
+            <h2>Contact</h2>
+            <p>Une demande de groupe ?</p>
+            <p>Contactez nous afin de vous faire une proposition personnalisée.</p>
         </div>
-        <div class="containt-form">
-            <p>Ou décider de nous envoyer un message par le site : </p>
-            <input type="text" placeholder="Votre Nom">
-            <input type="email" placeholder="Votre Email">
-            <textarea name="message" placeholder="Votre message"id="" cols="30" rows="10"></textarea>
+        <div class="content-renseignement">
+            <div class="containt-contact">
+                <h2>Nous contacter</h2>
+                <p>Vous pouvez nous contacter par : </p>
+                <p>Téléphone au : 05.30.18.23.52</p>
+                <p>Mail : thelittlefootbistro@gmail.com</p>
+            </div>
+            <div class="containt-form">
+                <p>Ou décider de nous envoyer un message par le site : </p>
+                <input type="text" placeholder="Votre Nom">
+                <input type="email" placeholder="Votre Email">
+                <textarea name="message" placeholder="Votre message"id="" cols="30" rows="10"></textarea>
+            </div>
         </div>
     </section>
 
 </section>
-    <footer>
-        <div class="picture-footer">
-            <img src="./images/petit_burger3.jpg" alt="photo de burger" title="burger de boeuf et son risotto de butternut" class="footer-img"/>
-        	<img src="./images/petit_chef.jpg" alt="cuisine" title="cuisine" class="footer-img"/>
-        	<img src="./images/petit_veloute.jpg" alt="veloute de légumes" title="oeuf parfait et son velouté" class="footer-img"/>
-        	<img src="./images/petit_croqui.jpg" alt="un dessin du restaurant" class="footer-img"/>
+<div class="picture-footer">
+    <p>Suivez-nous sur nos réseaux sociaux pour découvrir nos créations chaque semaine </p>
+    <div class="content-picture">
+        <img src="./images/petit_burger3.jpg" alt="photo de burger" title="burger de boeuf et son risotto de butternut" class="footer-img"/>
+        <img src="./images/petit_chef.jpg" alt="cuisine" title="cuisine" class="footer-img"/>
+        <img src="./images/petit_veloute.jpg" alt="veloute de légumes" title="oeuf parfait et son velouté" class="footer-img"/>
+        <img src="./images/petit_croqui.jpg" alt="un dessin du restaurant" class="footer-img"/>
+    </div>
+</div>
+<footer>
+    <div class="reseaux">
+        <p>Mentions légales - tous droits réservées - LittleFootDev</p>
+        <div class="lien-reseaux">
+            <span><a href="#" class="liens-reseaux"><img src="./images/facebook.png" alt="facebook" class="icon-reseaux"> : Facebook </a></span>
+        <span><a href="#" class="liens-reseaux"><img src="./images/instagram.png" alt="Instagram" class="icon-reseaux"> : Instagram </a></span>
         </div>
-        <div class="reseaux">
-            <p>Suivez-nous sur les réseaux sociaux : </p>
-            <div class="lien-reseaux">
-                <span><a href="#" class="liens-reseaux"><img src="./images/facebook.png" alt="facebook" class="icon-reseaux"> : Facebook </a></span>
-            <span><a href="#" class="liens-reseaux"><img src="./images/instagram.png" alt="Instagram" class="icon-reseaux"> : Instagram </a></span>
-            </div>
-        </div>
+    </div>
 
-    </footer>
+</footer>
     <script src="./app.js"></script>
 </body>
 </html>
