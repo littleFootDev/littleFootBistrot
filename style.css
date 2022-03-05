@@ -171,11 +171,18 @@ header {
 .picture-liens {
     width: 15rem;
     height: 15rem;
-    border: 20px solid rgba(255,255, 255, .5);
     margin-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.border-image {
+    height: 12rem;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255, 255, .3);
 }
 .items-liens1{
     background: url(./images/croqui.jpg) center center ;
@@ -208,16 +215,16 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 5rem ;
-
+    width: 75%;
+    margin: 3rem auto;
 }
 .picture-footer p {
     font-size: 1rem;
     margin-bottom: 2rem;
 }
 .footer-img {
-    height:5rem;
-    width: 5rem;
+    height:2rem;
+    width: 2rem;
     margin-right: .5rem;
 }
 .reseaux {
@@ -578,8 +585,14 @@ img.active {
     .picture-liens {
         height:10rem;
         width: 10rem;
-        margin: 2rem 2rem 0 0;
+        margin: 1rem 1rem;
     }
+    .border-image  {
+        height: 8rem;
+        width: 8rem;
+    }
+
+
     
     .footer-img {
         height:7rem;
@@ -651,9 +664,8 @@ img.active {
         margin-right: 5rem;
     }
     .border-image {
-        border: 1.5rem solid black;
-        height: 10rem;
-        width : 10rem;
+        height: 8rem;
+        width : 8rem;
     }
     .block-menu span {
         margin-right : 4rem;
