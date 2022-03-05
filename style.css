@@ -372,11 +372,22 @@ td {
     margin-bottom: .5rem;
 }
 .btn-link {
+    border: 0;
     padding: 1rem;
     cursor: pointer;
+    transition: all 0.4s;
+}
+.btn-link:hover {
+    background-color: #333;
+    transition: all 0.4s;
 }
 .btn-link a {
     color: #333;
+    transition: all 0.4s;
+}
+.btn-link a:hover {
+    color:#fff;
+    transition: all 0.4s;
 }
 /* La carte */
 .presentation-carte {
@@ -655,9 +666,16 @@ img.active {
     .contact {
         width: 50%;
     }
+    /* galerie */
+    .container-carousel {
+        margin: auto;
+    }
 }
 
 @media screen and (min-width: 1350px) {
+    .nav-restaurant{
+        justify-content: space-around;
+    }
     .picture-liens {
         height:10rem;
         width: 10rem;
@@ -670,5 +688,17 @@ img.active {
     .block-menu span {
         margin-right : 4rem;
     }
-    
+    .carte {
+        width :25%;
+    }
+    .contact {
+        width :25%;
+    }
+     /* galerie */
+     .container-carousel {
+        margin-right: 12rem;
+    }
+    .cont-btn {
+        width: 84.1%;
+    }
 }
