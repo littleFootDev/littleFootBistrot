@@ -7,8 +7,27 @@
 body {
     font-size: 62.5%;
     font-family: 'Raleway', sans-serif;
-}
 
+}
+h1 {
+    font-size: 1.8rem;
+    font-family: 'Lora', serif;
+}
+h2 {
+    font-size: 1.5rem;
+    font-family: 'Lora' sans-serif;
+}
+h3 {
+    font-size: 1.3rem;
+}
+a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+p {
+    font-size: 1rem;
+}
 /* navigation */
 
 header {
@@ -21,11 +40,8 @@ header {
     background-size: cover;
 }
 .title {
-    font-size: 1.8rem;
     color: #fff;
     margin-top: 1.5rem;
-    font-family: 'Lora', serif;
-
 }
 .nav{
     display: none;
@@ -51,8 +67,6 @@ header {
 .block-menu span a {
     text-decoration: none;
     color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
 }
 .block-menu span::after {
     content: "";
@@ -142,19 +156,16 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center_;
+    text-align: center;
     margin: 3rem auto;
     width: 75%;
     padding: 1rem;
 }
 .intro-title {
-    font-size: 1.5rem;
-    font-family: 'Lora' sans-serif;
     margin-bottom: 2.5rem;
 }
 
 .intro-text {
-    font-size: 1rem;
     text-align: justify;
 }
 .text1 {
@@ -182,7 +193,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255,255, 255, .3);
+    transition: all 0.6s;
+     
+}
+.border-image:hover {
+    background-color: rgba(255,255, 255, .6);
+    transition: all 0.6s;
 }
 .items-liens1{
     background: url(./images/croqui.jpg) center center ;
@@ -196,42 +212,33 @@ header {
 .items-liens4{
     background: url(./images/veloute.jpg) center center ;
 }
-a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.3rem;
-    font-family: 'Raleway', sans-serif;
-}
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:5rem 0 0 0;
-    background: #ddd;
-
-}
 .picture-footer {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 75%;
-    margin: 3rem auto;
+    margin: 10rem auto;
 }
 .picture-footer p {
-    font-size: 1rem;
     margin-bottom: 2rem;
 }
 .footer-img {
-    height:2rem;
-    width: 2rem;
-    margin-right: .5rem;
+    height:4rem;
+    width: 4rem;
+    margin: .5rem;
 }
 .reseaux {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+}
+footer {
+    background : #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
 }
 .reseaux p {
     font-size: .8rem;
@@ -242,15 +249,23 @@ footer {
 .icon-reseaux {
     height:1rem;
 }
-.liens-reseaux {
+.lien-reseaux {
     margin : 0 2rem;
     color: #333;
     font-size:1rem;
     display: flex;
-
-
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
 }
-
+.liens-reseaux {
+    display: flex;
+    
+}
+.liens-reseaux img{
+    margin-right: .5rem;
+}
 /* Page restaurant */
 .header {
     width: 100%;
@@ -383,6 +398,7 @@ td {
 }
 .btn-link a {
     color: #333;
+    font-size : .8rem;
     transition: all 0.4s;
 }
 .btn-link a:hover {
@@ -400,13 +416,11 @@ td {
     text-align: center;
 }
 .carte-title {
-    font-size:1.5rem;
     font-family: 'Lora';
     margin-bottom: 1.5rem;;
 }
 .presentation-carte p {
     margin-bottom: 1rem;
-    font-size: .8rem;
     font-family: 'Raleway', sans-serif;
 
 }
@@ -416,14 +430,13 @@ td {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 5rem auto;
+    margin: 5rem auto 7rem auto;
     border : 1px solid #333;
     border-radius: .2rem;
-    padding: 3rem;
+    padding: 2rem;
     background: #f1f1f1
 }
 .carte-article {
-    width: 75%;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -432,14 +445,11 @@ td {
     margin-bottom: 1.2rem;
 }
 .carte-article h3 {
-    font-size:1.2rem;
     font-family: 'Lora', serif;
     margin: 0 auto 2rem auto;   
 }
 
 .carte-article p{
-    font-size: .8rem;
-    font-family: 'Raleway', sans-serif;
     margin-bottom: .5rem;
 }
 /* section galerie */
@@ -452,50 +462,15 @@ td {
     margin: 3rem auto;
 }
 .galerie-title {
-    font-size: 1.3rem;
     font-family: 'Lora', sans-serif;
     margin-bottom: 3rem;
 }
 .galerie p {
-    font-size: .8rem;
-    font-family: 'Raleway', sans-serif;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
-.container-carousel {
-    width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-}
-.slider img {
-    max-width: 100%;
-    display: none;
-}
-img.active {
-    display : block;
-    animation: fade .8s;
-}
-@keyframes fade {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity:1;
-    }
-}
-.cont-btn {
-    width:100%;
-    height:auto;
-    border: 1px solid #000;
-    box-shadow: 0 10px 10px rgba(0,0, 0, .3);
-    display: flex;
-    justify-content: center;
-
-}
-.btn-nav{
-    font-size: 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    color: #000;
+.image-carousel {
+    height: 14rem;
+    width: 14rem;
 }
 
 /* section contact */
@@ -579,7 +554,7 @@ img.active {
     header {
         height: 40rem;
     }
-    .title {
+    .h1 {
         font-size: 3.5rem;
     }
     .nav {
@@ -589,22 +564,23 @@ img.active {
     .block-menu span {
         margin-right : 4rem;
     }
-    .block-menu span a{
-        font-size: 1.5rem;
-        
+    a{
+        font-size: 1.5rem;   
     }
     .picture-liens {
         height:10rem;
         width: 10rem;
-        margin: 1rem 1rem;
+        margin: 1rem;
     }
     .border-image  {
         height: 8rem;
         width: 8rem;
     }
+    .liens-accueil{
+        height: 8rem;
+        width: 8rem;
+    }
 
-
-    
     .footer-img {
         height:7rem;
         width: 7rem;
@@ -614,14 +590,14 @@ img.active {
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
-        margin-right: 2rem;
     }
     .reseaux p {
         margin-left: 2rem;
     }
-    .liens-reseaux {
-        margin-right: 1rem;
+    .liens-reseaux{
+        font-size:1rem;
     }
+   
     /* restaurant */
     .header {
         height: 5rem;
@@ -667,38 +643,31 @@ img.active {
         width: 50%;
     }
     /* galerie */
-    .container-carousel {
-        margin: auto;
+    .image-carousel{
+        height: 40rem;
+        width: 40rem;
     }
 }
 
 @media screen and (min-width: 1350px) {
+    .border-image  {
+        height: 8rem;
+        width: 8rem;
+    }
+    .liens-accueil{
+        height: 8rem;
+        width: 8rem;
+    }
     .nav-restaurant{
         justify-content: space-around;
-    }
-    .picture-liens {
-        height:10rem;
-        width: 10rem;
-        margin-right: 5rem;
-    }
-    .border-image {
-        height: 8rem;
-        width : 8rem;
     }
     .block-menu span {
         margin-right : 4rem;
     }
     .carte {
-        width :25%;
+        width :30%;
     }
     .contact {
         width :25%;
-    }
-     /* galerie */
-     .container-carousel {
-        margin-right: 12rem;
-    }
-    .cont-btn {
-        width: 84.1%;
     }
 }
